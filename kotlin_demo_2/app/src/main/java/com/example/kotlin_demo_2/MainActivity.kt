@@ -51,7 +51,7 @@ fun Greeting(message: String, from: String, modifier: Modifier = Modifier) {
                     fontSize = 36.sp
                 )
             }
-            GreetingImage(message = "hello birthday", from ="Darpan" )
+            GreetingImage()
         }
     }
 }
@@ -72,7 +72,7 @@ fun BirthdayCardPreview() {
 //    }
 //}
 @Composable
-fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier)
+fun GreetingImage()
 {
     val image= painterResource(id = R.drawable.androidparty)
     Image(painter = image, contentDescription = "hello world")
